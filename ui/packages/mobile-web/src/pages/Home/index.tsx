@@ -1,48 +1,14 @@
-import { Carousel } from '@mantine/carousel';
-import { Box, Container, Stack, Text, Title } from '@mantine/core';
-import Autoplay from 'embla-carousel-autoplay';
-import { useRef } from 'react';
+// import Autoplay from 'embla-carousel-autoplay';
+// import { useRef } from 'react';
+// import { useProfile } from '../../hooks/useProfile';
+// import { Carousel } from '@mantine/carousel';
+
+import { Box, Container } from '@mantine/core';
 import GetStartedOverlay from '../../assets/getstarted-gradient-overlay.png';
 import { PrimaryButton } from '../../components/Buttons/Buttons';
 import { Link } from 'react-router-dom';
-import { useProfile } from '../../hooks/useProfile';
-
-type QuoteCardProps = {
-  title: string;
-  subtitle: string;
-};
-
-const QuoteCard = ({ title, subtitle }: QuoteCardProps) => (
-  <Stack
-    gap={0}
-    style={{
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minHeight: 188,
-      padding: 30,
-      borderRadius: 24,
-      backgroundColor: 'rgba(255, 255, 255, 0.5)',
-    }}
-  >
-    <Title
-      order={2}
-      style={{
-        marginTop: 0,
-        marginBottom: 15,
-        fontSize: 32,
-        fontWeight: 500,
-      }}
-    >
-      {title}
-    </Title>
-    <Text style={{ fontSize: 16 }}>{subtitle}</Text>
-  </Stack>
-);
 
 const HomePage = () => {
-  // const { latestSurvey } = useProfile();
-  // const autoplay = useRef(Autoplay({ delay: 5000 }));
   return (
     <Box
       style={(t) => ({

@@ -9,7 +9,6 @@ import ProfilePage from './pages/Profile';
 import SignInPage from './pages/SignIn';
 import SignUpPage from './pages/SignUp';
 import SurveyPage from './pages/Survey';
-import ForgotPassword from './pages/ForgotPassword';
 import SurveyComplete from './pages/Survey/Completed';
 
 const Routes = () => {
@@ -47,10 +46,6 @@ const Routes = () => {
     {
       path: '/get-started',
       element: <GetStartedPage />,
-    },
-    {
-      path: '/forgot-password',
-      element: <ForgotPassword />,
     },
   ]);
 };

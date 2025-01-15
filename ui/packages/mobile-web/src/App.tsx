@@ -7,8 +7,6 @@ import { theme } from '../src/theme';
 import queryClient from './queryClient';
 import Routes from './Routes';
 import { Authentication } from './contexts/Authentication'
-import { ProfileProvider } from './contexts/Profile';
-// import { AuthProvider } from './contexts/Auth';
 
 function App() {
   return (

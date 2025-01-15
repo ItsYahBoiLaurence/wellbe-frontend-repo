@@ -12,7 +12,6 @@ import { OutlineButton, PrimaryButton } from '../../components/Buttons/Buttons';
 import CalendarTodayIcon from '../../components/icons/CalendarTodayIcon';
 import ThumbDownIcon from '../../components/icons/ThumbDownIcon';
 import ThumbUpIcon from '../../components/icons/ThumbUpIcon';
-import { useAuth } from '../../hooks/useAuth';
 import { useEffect, useState } from 'react';
 import api from '../../api/api';
 

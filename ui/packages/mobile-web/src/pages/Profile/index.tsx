@@ -1,4 +1,4 @@
-import { Container, Avatar, Button, Paper, Text } from '@mantine/core';
+import { Container, Avatar, Text } from '@mantine/core';
 
 const ProfilePage = () => {
   return (

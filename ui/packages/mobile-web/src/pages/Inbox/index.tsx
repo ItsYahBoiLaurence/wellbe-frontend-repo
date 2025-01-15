@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, Card, List, Avatar, Text, Group, Badge, ScrollArea } from "@mantine/core";
-import { useState } from "react";
+// import React from "react";
+// import { useState } from "react";
+import { Container, Card, List, Avatar, Text, Group, ScrollArea } from "@mantine/core";
 
 const messages = [
   {

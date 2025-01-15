@@ -2,19 +2,23 @@ import { Box, Button, Container, Grid, Stack, Text, Title } from '@mantine/core'
 import { IconChevronLeft } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
 import GetStartedOverlay from '../../assets/getstarted-gradient-overlay.png';
-import { PrimaryButton } from '../../components/Buttons/Buttons'; // Assuming PrimaryButton is a custom component
 import { PrimaryIconButton } from '../../components/IconButton';
 import { PageHeader } from '../../components/PageHeader';
 
+enum SurveyStatus {
+    START = 'survey-start',
+    IN_PROGRESS = 'survey-in-progress',
+    COMPLETED = 'survey-complete',
+}
+
 type Props = {
-    changeStateFunction: (status: string) => void; // Expecting a function that takes a status and updates the state
-    status: { COMPLETED: string }; // The status object should have a COMPLETED property
+    changeStateFunction: (status: SurveyStatus) => void;
+    status: SurveyStatus;
 };
 
-const SurveyStartPage = ({ changeStateFunction, status }: Props) => {
+const SurveyStartPage = ({ changeStateFunction }: Props) => {
     const handleSubmit = () => {
-        // This will trigger the changeStateFunction passed from the parent component
-        changeStateFunction(status.IN_PROGRESS);
+        changeStateFunction(SurveyStatus.IN_PROGRESS);
     };
 
     return (
@@ -111,7 +115,6 @@ const SurveyStartPage = ({ changeStateFunction, status }: Props) => {
                     paddingBottom: 32,
                 }}
             >
-                {/* This is where you can either use your custom PrimaryButton or Mantine Button */}
                 <Button onClick={handleSubmit}>Ready? Let's Start</Button>
             </Box>
         </Box>
